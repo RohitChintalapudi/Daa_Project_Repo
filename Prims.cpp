@@ -6,7 +6,7 @@ int main() {
     cout << "Enter number of vertices: ";
     cin >> n;
 
-    int cost[n][n];
+    int cost[20][20];
     cout << "Enter adjacency matrix (0 for no edge):\n";
 
     for (int i = 0; i < n; i++) {
@@ -17,7 +17,7 @@ int main() {
         }
     }
 
-    int visited[n] = {0};
+    int visited[20] = {0};
     visited[0] = 1;
 
     int edges = 0;
